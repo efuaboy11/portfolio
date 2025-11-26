@@ -42,6 +42,12 @@ const Header = () => {
                             {/* <!-- Main Menu --> */}
                             <nav className="main-menu navbar-expand-lg">
                                 <div className="navbar-header">
+                                    <div className="mobile-logo">
+                                        <Link href="/">
+                                            {/* <Image width={75} height={25} sizes='100vw' src={"/images/logo.png"} alt="Logo" title="Logo" /> */}
+                                        </Link>
+                                    </div>
+
                                     {/* <!-- Toggle Button --> */}
                                     <button type="button" className="navbar-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                                         <span className="icon-bar"></span>

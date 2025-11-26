@@ -11,7 +11,7 @@ const Footer = () => {
                         <div className="col-lg-6">
                             <div className="copyright-text">
                                 <p>
-                                    Copyright @{year}, <Link href="/">Bentos</Link> All
+                                    Copyright @{year}, <Link href="/">Ehizefua</Link> All
                                     Rights Reserved.
                                 </p>
                             </div>
@@ -19,7 +19,7 @@ const Footer = () => {
                         <div className="col-lg-6">
                             <div className="copyright-text extra-copyright">
                                 <p>
-                                    Crafted with ❤️ theme_ocean
+                                    Crafted by ❤️ ehiz
                                 </p>
                             </div>
                         </div>

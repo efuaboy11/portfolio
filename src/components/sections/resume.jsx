@@ -1,0 +1,60 @@
+import React from 'react'
+import { RiBookLine } from '@remixicon/react'
+import SlideUp from '@/utlits/animations/slideUp'
+
+const Resume = () => {
+    return (
+        <section id="resume" className="resume-area">
+            <div className="container">
+                <div className="resume-items">
+                    <div className="row">
+                        {/* <!-- START EXPERIENCE RESUME DESIGN AREA --> */}
+                        <div className="col-xl-6 col-md-6">
+                            <div className="single-resume">
+                                <h2>Experience</h2>
+                                <div className="experience-list">
+                                    <Card year={'2023 - Present'} title={'Mobile App development'} institution={'Fredita academy '} />
+                                    <Card year={'2022 - 2023'} title={'Web development'} institution={'Springfield mental health services'} />
+                                    <Card year={'2021 - 2022'} title={'Web Designer'} institution={'Emford real estate investment'} />
+                                </div>
+                            </div>
+                        </div>
+                        {/* <!-- // END EXPERIENCE RESUME DESIGN AREA -->
+                        <!-- START EDUCATION RESUME DESIGN AREA --> */}
+                        <div className="col-xl-6 col-md-6">
+                            <div className="experience-list">
+                                <div className="single-resume">
+                                    <h2>Education</h2>
+                                    <Card year={'2022 - 2024'} title={'Professional diploma'} institution={'National Institute Information Technology'} />
+                                    <Card year={'2015 - 2021'} title={'Higher secoundary Education'} institution={'Federal Science and Technical COllege'} />
+                                    <Card year={'2023 - 2023'} title={'Certified cybersecurity (ISC2)'} institution={'Webster College'} />
+                                </div>
+                            </div>
+                        </div>
+                        {/* <!-- // END EDUCATION RESUME DESIGN AREA --> */}
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
+
+export default Resume
+
+
+const Card = ({ year, title, institution }) => {
+    return (
+        <SlideUp>
+            <div className="resume-item">
+                <div className="icon">
+                    <RiBookLine />
+                </div>
+                <div className="content">
+                    <span className="years">{year}</span>
+                    <h4>{title}</h4>
+                    <span className="company"> {institution} </span>
+                </div>
+            </div>
+        </SlideUp>
+    )
+}

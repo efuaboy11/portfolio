@@ -4,7 +4,7 @@ export const projectsData = [
         src: "/images/projects/work1.JPG",
         category: "Website",
         title: "School Management System",
-        link: "https://school-management-flax-one.vercel.app"
+        link: "https://school-management-flax-one.vercel.app/login"
     },
     {
         id: 2,
